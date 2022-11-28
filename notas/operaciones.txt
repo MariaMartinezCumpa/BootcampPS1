@@ -1,0 +1,46 @@
+microservicios
+(personas)
+-clientes
+	Consultar cliente por dni/ruc
+	listar clientes
+	registrar cliente
+	actualizar datos de cliente
+	eliminar cliente(dar de baja)
+
+-productos
+	listar productos
+	registrar producto
+	actualizar datos de producto
+	eliminar producto(dar de baja)
+	
+-operaciones
+	crear cuenta bancaria de cliente (personal o empresarial)		
+		input:ingresar dni/ruc , tipo de producto, clave de 4 digitos
+			input2:buscar datos de la persona por numero de documento(dni/ruc) y luego guardar si en caso los datos son correctos
+		output:mostrar nombre de la persona , su numero de tarjeta, su numero de cuenta, su tipo de producto y su saldo
+	crear credito de cliente (personal o empresarial)
+		input:ingresar dni/ruc , tipo de producto, monto de credito, pedir clave de 4 digitos si en caso es tarjeta de credito.
+			input2:buscar datos de la persona/empresa por numero de documento(dni/ruc) y luego guardar si en caso los datos son correctos
+		output:mostrar nombre de la persona , su producto adquirido , su limite de credito y su saldo.
+	consultar cuentas/creditos de cliente por dni/ruc
+		input:ingresar dni/ruc 
+		ouput: mostrar cuentas /creditos que posee el cliente.
+	depositar 
+		input: dni/ruc , monto a depositar,numero de cuenta(puede ser de una cuenta bancaria o de una tarjeta de credito)
+		output: si en caso es correcto, devolver numero de cuenta y saldo de la cuenta 
+	retirar 
+		input: dni/ruc , monto a retirar,numero de cuenta,clave(puede ser de una cuenta bancaria o de una tarjeta de credito)
+		output: si en caso es correcto, devolver numero de cuenta y saldo de la cuenta 
+	pagar
+		input: dni/ruc , monto a pagar,numero de cuenta
+		output: si en caso es correcto, devolver numero de cuenta y deuda pendiente	
+	saldos disponibles en sus cuentas /creditos del cliente
+		input: dni/ruc
+		output: mostrar saldos de todas las cuentas/creditos del cliente en consulta
+	consultar movimientos de un producto que tiene un cliente
+		input: dni/ruc, numero de cuenta o su credito
+		output: mostrar historial de operaciones de un producto del cliente en consulta
+		
+		
+		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
+	
